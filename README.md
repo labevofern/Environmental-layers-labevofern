@@ -122,49 +122,6 @@ The following variables are included:
 
 ---
 
-## Repository Access and Git LFS
-
-The repository contains large raster files managed using Git Large File Storage (Git LFS).
-
-### Clone the repository
-
-```bash
-git clone https://github.com/labevofern/Environmental-layers.git
-cd Environmental-layers
-```
-
-### Install Git LFS
-
-On macOS, Git LFS can be installed using Homebrew:
-
-```bash
-brew install git-lfs
-```
-
-Initialize Git LFS and download the datasets:
-
-```bash
-git lfs install
-git lfs pull
-```
-
-### Upload Large Raster Files
-
-To track and upload GeoTIFF files using Git LFS:
-
-```bash
-git lfs install
-git lfs track "*.tif"
-git add .gitattributes
-git add .
-git commit -m "Add environmental raster layers"
-git push origin main
-```
-
-Git LFS facilitates the management and version control of large geospatial datasets.
-
----
-
 ## Data Sources and Acknowledgments
 
 The environmental layers were compiled from publicly available environmental databases:
